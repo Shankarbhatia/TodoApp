@@ -23,10 +23,9 @@ h1{
   text-align: center;
   font-family: 'Lucida Sans';
   font-weight: 700;
-  background: black;
-  color: white;
+  background: #20c7ff;
+  color: #000;
   line-height: 1.5em;
-  padding: 0 20px;
 }
 .todoInputBox{
   width: 100%;
@@ -36,11 +35,10 @@ h1{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background:#000 ;
+  background:#20c7ff ;
+  width: 100%;
 }
-.header img{
-  background: #fff;
-}
+
 .todoInputBox form{
   display: flex;
   align-items: end;
@@ -107,9 +105,12 @@ form button{
   border-radius: 4px;
   cursor: pointer;
 }
+.header img{
+  width: 15%;
+  margin-bottom: 10px;
+}
 
-
-@media (320px <= width <= 870px){
+@media (320px <= width <= 470px){
   .container{
     width: 94%;
     align-items: center;
@@ -117,16 +118,20 @@ form button{
   h1{
     font-size: 36px;
     line-height: 1.2em;
+    color: #fff;
+
     background: transparent;
   }
   .header{
     width: 100%;
     flex-direction: column;
     background: rgb(0, 0, 0);
+    padding: 10px 0;
   }
   .header img{
     width: 15%;
-    margin-bottom: 10px;
+    margin: 10px 0;
+    background: #fff;
   }
 
 input{
