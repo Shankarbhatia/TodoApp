@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import todoImg from "./assets/to-do.png"
 
 function Todo() {
 
@@ -58,7 +59,8 @@ function Todo() {
     return (
         <div>
             <div className='container'>
-                <h1>My Todo App</h1>
+                <div className="header"><img src={todoImg} alt="Todo logo" /> <h1>My Todo App</h1></div>
+               
                 <div className="todoInputBox">
                     <form onSubmit={submitHandler}>
                         <div className="inputBox">

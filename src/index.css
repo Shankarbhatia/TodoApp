@@ -26,10 +26,20 @@ h1{
   background: black;
   color: white;
   line-height: 1.5em;
+  padding: 0 20px;
 }
 .todoInputBox{
   width: 100%;
 
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background:#000 ;
+}
+.header img{
+  background: #fff;
 }
 .todoInputBox form{
   display: flex;
@@ -96,4 +106,45 @@ form button{
   border: 1px solid #fff;
   border-radius: 4px;
   cursor: pointer;
+}
+
+
+@media (320px <= width <= 870px){
+  .container{
+    width: 94%;
+    align-items: center;
+  }
+  h1{
+    font-size: 36px;
+    line-height: 1.2em;
+    background: transparent;
+  }
+  .header{
+    width: 100%;
+    flex-direction: column;
+    background: rgb(0, 0, 0);
+  }
+  .header img{
+    width: 15%;
+    margin-bottom: 10px;
+  }
+
+input{
+  width: 100% !important;
+}
+.todoInputBox form{
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+  gap: 20px;
+  width: 94%;
+  margin: 0 auto;
+}
+.todoInputBox form .inputBox{
+  width: 100%;
+}
+.listContainer{
+  width: 94%;
+  padding: 10px 10px;
+}
 }
